@@ -1,12 +1,13 @@
 import styled from "styled-components";
+import { ListItem } from "./ListItem";
 
 const NavItems = () => {
   return (
     <NavItemsStyle>
-      <li>Home</li>
-      <li>About</li>
-      <li>Services</li>
-      <li>Contact</li>
+      <ListItem>Home</ListItem>
+      <ListItem>About</ListItem>
+      <ListItem>Services</ListItem>
+      <ListItem>Contact</ListItem>
     </NavItemsStyle>
   );
 };

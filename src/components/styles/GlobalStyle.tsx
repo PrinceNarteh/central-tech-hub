@@ -9,8 +9,9 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
     }
-
+    
     html {
+        overflow-y: hidden;
         font-size: 62.5%;
     }
 
