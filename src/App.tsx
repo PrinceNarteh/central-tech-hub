@@ -1,17 +1,18 @@
-import styled from "styled-components";
 import { Container } from "./components/styles";
-import { Theme } from "./theme";
+import Title from "./components/Title";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <Container>
-      <Text>Central Tech Hub</Text>
-    </Container>
+    <>
+      <Navbar />
+      <Container>
+        <Title as="h1" fontSize={5}>
+          Central Tech Hub
+        </Title>
+      </Container>
+    </>
   );
 }
-
-const Text = styled.h1`
-  color: ${({ theme }: { theme: Theme }) => theme.colors.primaryColor};
-`;
 
 export default App;
