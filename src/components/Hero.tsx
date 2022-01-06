@@ -5,9 +5,8 @@ import Title from "./Title";
 const Hero = () => {
   return (
     <HeroStyle>
-      <div className="overlay"></div>
       <Container>
-        <Title as="h1" fontSize={6}>
+        <Title as="h1" fontSize={6} color="#fff">
           Hero Section
         </Title>
       </Container>
@@ -16,12 +15,12 @@ const Hero = () => {
 };
 
 const HeroStyle = styled.section`
-  height: calc(100vh - 10rem);
+  min-height: calc(100vh - 10rem);
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(29, 26, 53, 0.5), rgba(29, 26, 53, 0.5)),
     url("hero.jpg");
   background-size: cover;
 `;
