@@ -30,7 +30,7 @@ const OfferStyle = styled.section`
   width: 100vw;
   background-color: #eee;
   position: relative;
-  padding-top: 2rem;
+  padding-top: 5rem;
 
   img {
     position: absolute;
@@ -59,7 +59,7 @@ const OfferStyle = styled.section`
     height: 100%;
     gap: 3rem;
     margin: auto 10%;
-    max-width: 50rem;
+    max-width: 80rem;
     margin-top: 5rem;
 
     .right {

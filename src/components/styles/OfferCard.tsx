@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { BiChalkboard } from "react-icons/bi";
+import { theme } from "../../theme";
 
 const OfferCard = () => {
   return (
     <OfferCardStyle>
-      <BiChalkboard size={30} />
+      <BiChalkboard size={50} />
 
       <h2>Web Development</h2>
       <p>
@@ -17,8 +18,21 @@ const OfferCard = () => {
 };
 
 const OfferCardStyle = styled.div`
-  min-width: 20rem;
+  min-width: 30rem;
   width: 20rem;
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  a {
+    font-size: 1.6rem;
+    color: ${theme.colors.secondaryColor};
+  }
 `;
 
 export default OfferCard;
