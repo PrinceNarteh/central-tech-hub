@@ -7,6 +7,7 @@ interface TitleProps {
   color?: string;
   children: React.ReactNode;
   underline?: boolean;
+  textAlign?: "left" | "center" | "right";
 }
 
 const Title = ({
@@ -14,6 +15,7 @@ const Title = ({
   fontSize,
   color,
   underline,
+  textAlign,
   children,
   ...props
 }: TitleProps) => {
@@ -21,6 +23,7 @@ const Title = ({
     font-size: ${fontSize ? fontSize : 2}rem;
     color: ${color ? color : "#333"};
     position: relative;
+    text-align: ${textAlign ? textAlign : "left"};
 
     ${underline &&
     css`
