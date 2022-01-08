@@ -49,6 +49,10 @@ const AboutStyle = styled.section`
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 2rem;
+
+    img {
+      width: 100%;
+    }
   }
 
   h4 {

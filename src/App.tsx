@@ -1,14 +1,16 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
 import About from "./components/About";
-import Offer from "./components/Offer";
 import Footer from "./components/Footer";
+import ImageSlider from "./components/ImageSlider";
+import Navbar from "./components/Navbar";
+import Offer from "./components/Offer";
+import Slider from "./components/Slider";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
+      <Slider src="hero.jpg" />
+      {/* <ImageSlider /> */}
       <About />
       <Offer />
       <Footer />
