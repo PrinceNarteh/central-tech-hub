@@ -7,34 +7,6 @@ export const SliderContainer = styled(Container)`
   max-width: 130rem;
 `;
 
-export const Row = styled.div`
-  display: flex;
-  margin: 0 -15px -15px -15px;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-direction: ${({ imgStart }: InfoSectionProps) =>
-    imgStart ? "row-reverse" : "row"};
-  height: 100%;
-`;
-
-export const Column = styled.div`
-  flex: 1;
-  flex-basis: 50%;
-  display: flex;
-  align-items: center;
-  max-width: 50%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-bottom: 15px;
-
-  @media screen and (max-width: 768px) {
-    display: flex;
-    justify-content: center;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-`;
-
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;

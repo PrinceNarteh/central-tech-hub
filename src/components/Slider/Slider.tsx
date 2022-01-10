@@ -2,14 +2,13 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../styles";
 import {
-  Column,
   Heading,
-  Row,
   SliderContainer,
   Subtitle,
   TextWrapper,
-  TopLine,
 } from "./Slider.elements";
+import { Row } from "../styles/Row";
+import { Column } from "../styles/Column";
 
 export interface InfoSectionProps {
   buttonLabel?: string;
@@ -25,17 +24,15 @@ export interface InfoSectionProps {
 
 const Slider = ({
   imgStart,
-  lightTopLine,
   lightText,
   lightTextDesc,
-  topLine,
   headline,
   description,
   buttonLabel,
   src,
 }: InfoSectionProps) => {
   const SliderStyle = styled.div`
-    height: calc(100vh - 9rem);
+    height: calc(100vh - 8rem);
     overflow: hidden;
     color: white;
     position: relative;
@@ -53,7 +50,7 @@ const Slider = ({
   return (
     <SliderStyle>
       <SliderContainer>
-        <Row imgStart={imgStart}>
+        <Row imgStart={false}>
           <Column>
             <TextWrapper>
               <Heading lightText={lightText}>{headline}</Heading>

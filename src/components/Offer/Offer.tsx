@@ -1,6 +1,8 @@
 import styled from "styled-components";
-import OfferCard from "./styles/OfferCard";
-import Title from "./Title";
+import OfferCard from "../styles/OfferCard";
+import { Row } from "../styles/Row";
+import Title from "../Title";
+import { OfferColumn, OfferContainer } from "./Offer.elements";
 
 const Offer = () => {
   return (
@@ -15,12 +17,16 @@ const Offer = () => {
           For Your Business
         </Title>
       </div>
-      <div className="bottom">
-        <OfferCard />
-        <OfferCard />
-        <OfferCard />
-        <OfferCard />
-      </div>
+      <OfferContainer>
+        <Row imgStart={false}>
+          <OfferColumn>
+            <OfferCard />
+            <OfferCard />
+            <OfferCard />
+            <OfferCard />
+          </OfferColumn>
+        </Row>
+      </OfferContainer>
     </OfferStyle>
   );
 };

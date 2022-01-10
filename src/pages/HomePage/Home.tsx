@@ -1,6 +1,5 @@
-import About from "../../components/About";
 import InfoSection from "../../components/InfoSection/InfoSection";
-import Offer from "../../components/Offer";
+import Offer from "../../components/Offer/Offer";
 import Slider from "../../components/Slider/Slider";
 import { aboutSection, sliderData } from "./HomeData";
 
@@ -10,7 +9,6 @@ const Home = () => {
       <Slider {...sliderData} />
       <InfoSection {...aboutSection} />
       {/* <ImageSlider /> */}
-      {/* <About /> */}
       <Offer />
     </div>
   );

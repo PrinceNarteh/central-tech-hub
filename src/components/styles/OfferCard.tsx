@@ -20,6 +20,7 @@ const OfferCard = () => {
 const OfferCardStyle = styled.div`
   min-width: 30rem;
   width: 20rem;
+  margin-bottom: 2rem;
 
   h2 {
     font-size: 1.8rem;
