@@ -1,20 +1,15 @@
-import About from "./components/About";
-import Footer from "./components/Footer";
-import ImageSlider from "./components/ImageSlider";
-import Navbar from "./components/Navbar";
-import Offer from "./components/Offer";
-import Slider from "./components/Slider";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/HomePage/Home";
 
 function App() {
   return (
-    <>
+    <Router>
       <Navbar />
-      <Slider src="hero.jpg" />
-      {/* <ImageSlider /> */}
-      <About />
-      <Offer />
-      <Footer />
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 

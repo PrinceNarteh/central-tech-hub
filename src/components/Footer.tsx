@@ -47,6 +47,7 @@ const Footer = () => {
 
 const FooterStyle = styled.footer`
   display: flex;
+  flex-wrap: wrap;
   width: 80%;
   margin: 4rem auto;
 
@@ -66,7 +67,8 @@ const FooterStyle = styled.footer`
   }
 
   .company {
-    flex: 2;
+    flex: 3;
+    text-align: justify;
 
     img {
       width: 7.5rem;
@@ -78,20 +80,14 @@ const FooterStyle = styled.footer`
   }
 
   .d-flex {
+    flex: 1;
+    flex-basis: 16rem;
+    flex-shrink: 10;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-  }
-
-  .services {
-    flex: 1;
-  }
-  .links {
-    flex: 1;
-  }
-  .newsletter {
-    flex: 1;
+    margin-bottom: 2rem;
   }
 `;
 

@@ -1,20 +1,31 @@
 import styled from "styled-components";
 import { theme } from "../../theme";
 
-interface ButtonProps {
-  children: React.ReactNode;
+interface Theme {
+  primary?: boolean;
+  large?: boolean;
+  bigFont?: boolean;
 }
 
-export const Button = ({ children }: ButtonProps) => {
-  return <ButtonStyle>{children}</ButtonStyle>;
-};
-
-const ButtonStyle = styled.button`
-  border: none;
+export const Button = styled.button`
+  border-radius: 4px;
+  background: ${({ primary }: Theme) => (primary ? "#4B59F7" : "#0467FB")};
+  white-space: nowrap;
+  padding: ${({ bigFont }: Theme) => (bigFont ? "12px 64px" : "10px 20px")};
+  color: ${theme.colors.light};
+  font-size: ${({ bigFont }: Theme) => (bigFont ? "20px" : "16px")};
   outline: none;
-  background-color: ${theme.colors.primaryColor};
-  color: white;
-  padding: 1rem 2rem;
-`;
+  border: none;
+  cursor: pointer;
 
-export default Button;
+  &:hover {
+    transition: all 0.3s ease-out;
+    background: ${theme.colors.light};
+    background-color: ${({ primary }: Theme) =>
+      primary ? "#0467FB" : "#4B59F7"};
+  }
+
+  @media screen and (max-width: 960px) {
+    width: 100%;
+  }
+`;

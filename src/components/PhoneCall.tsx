@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { BiPhoneCall } from "react-icons/bi";
-import { Theme } from "../theme";
+import { theme, Theme } from "../theme";
 
 const PhoneCall = () => {
   return (
@@ -42,6 +42,10 @@ const PhoneCallStyle = styled.div`
     span {
       display: block;
     }
+  }
+
+  @media screen and (max-width: ${theme.breakPoints.md}) {
+    display: none;
   }
 `;
 

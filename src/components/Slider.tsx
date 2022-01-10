@@ -19,7 +19,6 @@ const Slider = ({ src }: SliderProps) => {
       position: absolute;
       width: 100%;
       inset: 0;
-      z-index: 1;
       background-color: rgba(29, 26, 53, 0.7);
       display: flex;
       justify-content: center;
