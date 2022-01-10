@@ -35,7 +35,18 @@ export const NavbarContainer = styled(Container)`
   justify-content: space-between;
   height: 8rem;
 
-  ${Container}
+  z-index: 1;
+  width: 100%;
+  max-width: 140rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+  @media screen and (max-width: ${theme.breakPoints.lg}) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 `;
 
 export const NavLogo = styled(Link)`

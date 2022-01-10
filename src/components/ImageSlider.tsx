@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Slider from "./Slider";
+import Slider from "./Slider/Slider";
 
 const ImageSlider = () => {
   return <ImageSliderStyle>{/* <Slider /> */}</ImageSliderStyle>;
