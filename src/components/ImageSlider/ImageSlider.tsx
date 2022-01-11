@@ -1,5 +1,5 @@
-import { sliderData } from "../pages/HomePage/HomeData";
-import Slider from "./Slider/Slider";
+import { sliderData } from "./SliderData";
+import Slider from "./Slider";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, EffectFade } from "swiper";
 

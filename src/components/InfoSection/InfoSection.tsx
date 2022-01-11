@@ -41,8 +41,6 @@ const InfoSection = ({
   alt,
   start,
 }: InfoSectionProps) => {
-  console.log(start);
-
   return (
     <InfoSec lightBg={lightBg}>
       <Container>

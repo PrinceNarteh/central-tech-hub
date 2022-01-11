@@ -1,4 +1,4 @@
-import ImageSlider from "../../components/ImageSlider";
+import ImageSlider from "../../components/ImageSlider/ImageSlider";
 import InfoSection from "../../components/InfoSection/InfoSection";
 import Offer from "../../components/Offer/Offer";
 import { aboutSection } from "./HomeData";

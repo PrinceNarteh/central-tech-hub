@@ -1,8 +1,38 @@
 import styled from "styled-components";
-import OfferCard from "../styles/OfferCard";
+import OfferCard from "./OfferCard";
 import { Row } from "../styles/Row";
 import Title from "../Title";
 import { OfferColumn, OfferContainer } from "./Offer.elements";
+import { BiChalkboard } from "react-icons/bi";
+import { FaDatabase, FaMobileAlt } from "react-icons/fa";
+import { GiCyberEye } from "react-icons/gi";
+
+const offers = [
+  {
+    title: "Web Development",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ullam voluptate dolor a.",
+    icon: <BiChalkboard size={50} />,
+  },
+  {
+    title: "Database Management",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ullam voluptate dolor a.",
+    icon: <FaDatabase size={50} />,
+  },
+  {
+    title: "Mobile Application",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ullam voluptate dolor a.",
+    icon: <FaMobileAlt size={50} />,
+  },
+  {
+    title: "Cyber Security",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ullam voluptate dolor a.",
+    icon: <GiCyberEye size={50} />,
+  },
+];
 
 const Offer = () => {
   return (
@@ -20,10 +50,9 @@ const Offer = () => {
       <OfferContainer>
         <Row imgStart={false}>
           <OfferColumn>
-            <OfferCard />
-            <OfferCard />
-            <OfferCard />
-            <OfferCard />
+            {offers.map((offer, idx) => (
+              <OfferCard key={idx} {...offer} />
+            ))}
           </OfferColumn>
         </Row>
       </OfferContainer>

@@ -1,17 +1,20 @@
+import React from "react";
 import styled from "styled-components";
-import { BiChalkboard } from "react-icons/bi";
 import { theme } from "../../theme";
 
-const OfferCard = () => {
+interface Props {
+  icon: React.ReactNode;
+  title: string;
+  content: string;
+}
+
+const OfferCard = ({ icon, title, content }: Props) => {
   return (
     <OfferCardStyle>
-      <BiChalkboard size={50} />
+      {icon}
 
-      <h2>Web Development</h2>
-      <p>
-        Recusandae doloremque nihil expedita velit unde perferendis animi eum ut
-        est.
-      </p>
+      <h2>{title}</h2>
+      <p>{content}</p>
       <a href="">Read More...</a>
     </OfferCardStyle>
   );
