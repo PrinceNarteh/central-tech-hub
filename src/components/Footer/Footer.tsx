@@ -85,14 +85,18 @@ const Footer = () => {
             Central Tech Hub © {new Date().getFullYear()}
           </WebsiteRights>
           <SocialIcons>
-            <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+            <SocialIconLink
+              href="https://facebook.com/codecoastghana"
+              target="_blank"
+              aria-label="Facebook"
+            >
               <FaFacebook />
             </SocialIconLink>
             <SocialIconLink href="/" target="_blank" aria-label="Instagram">
               <FaInstagram />
             </SocialIconLink>
             <SocialIconLink
-              href="https://youtube.com/code-coast"
+              href="https://www.youtube.com/channel/UCxGOs0JkHS_Jqm_JfVTk-kA"
               rel="noopener noreferrer"
               target="_blank"
               aria-label="Youtube"
