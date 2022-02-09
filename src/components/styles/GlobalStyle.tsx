@@ -15,6 +15,14 @@ export const GlobalStyle = createGlobalStyle`
         overflow-x: hidden;
     }
 
+   body {
+        background-color: #0b2347;
+        background-image: url("./images/bg_img.png");
+        background-position: center center;
+        background-repeat: repeat-y;
+        color: #fff;
+    }
+
     a {
         text-decoration: none;
     }

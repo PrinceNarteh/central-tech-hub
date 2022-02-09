@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
 export const Column = styled.div`
-  flex: 1;
-  flex-basis: 50%;
-  max-width: 50%;
   display: flex;
+  width: ${({ width }: { width?: number }) => (width ? `${width}%` : `50%`)};
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;

@@ -9,6 +9,7 @@ import {
   InfoSec,
   Subtitle,
   TextWrapper,
+  Title,
   TopLine,
 } from "./InfoSection.elements";
 
@@ -48,7 +49,7 @@ const InfoSection = ({
           <InfoColumn>
             <TextWrapper>
               <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
-              <Heading lightText={lightText}>{headline}</Heading>
+              {/* <Title lightText={lightText}>{headline}</Title> */}
               <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
               <Link to="/sign-up">
                 <Button bigFont large primary>

@@ -53,12 +53,13 @@ export const TopLine = styled.div`
   margin-bottom: 16px;
 `;
 
-export const Heading = styled.h1`
-  margin-bottom: 24px;
-  font-size: 48px;
+export const Title = styled.h1`
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: clamp(20px, 3.5vw, 38px);
   line-height: 1.1;
-  color: ${({ lightText }: InfoSectionProps) =>
-    lightText ? "#f7f8fa" : "#1c2237"};
+  color: ${({ color }: { color?: string }) =>
+    color ? `#${color}` : "#f7f8fa"};
 `;
 
 export const Subtitle = styled.p`
@@ -68,6 +69,16 @@ export const Subtitle = styled.p`
   line-height: 24px;
   color: ${({ lightTextDesc }: InfoSectionProps) =>
     lightTextDesc ? "#a9b3c1" : "#1c2237"};
+`;
+
+export const Heading = styled.h6`
+  color: #2cd97b;
+  font-family: "Saira", Sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
 `;
 
 export const ImgWrapper = styled.div`

@@ -4,7 +4,7 @@ import { theme } from "../../theme";
 export const Container = styled.div`
   z-index: 1;
   width: 100%;
-  max-width: 130rem;
+  max-width: 114rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 5rem;
