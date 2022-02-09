@@ -58,8 +58,7 @@ export const Title = styled.h1`
   font-weight: 500;
   font-size: clamp(20px, 3.5vw, 38px);
   line-height: 1.1;
-  color: ${({ color }: { color?: string }) =>
-    color ? `#${color}` : "#f7f8fa"};
+  color: ${({ color }: { color?: string }) => (color ? `${color}` : "#f7f8fa")};
 `;
 
 export const Subtitle = styled.p`

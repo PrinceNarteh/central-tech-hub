@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Column = styled.div`
   display: flex;
+  flex-direction: column;
   width: ${({ width }: { width?: number }) => (width ? `${width}%` : `50%`)};
   align-items: center;
   padding-left: 15px;

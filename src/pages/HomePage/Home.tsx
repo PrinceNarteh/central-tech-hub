@@ -1,3 +1,4 @@
+import { Feature } from "../../components/Feature/Feature";
 import ImageSlider from "../../components/ImageSlider/ImageSlider";
 import InfoSection from "../../components/InfoSection/InfoSection";
 import Offer from "../../components/Offer/Offer";
@@ -10,6 +11,7 @@ const Home = () => {
       <ImageSlider />
       {/* <InfoSection {...aboutSection} /> */}
       <Welcome />
+      <Feature />
       {/* <Offer /> */}
     </div>
   );

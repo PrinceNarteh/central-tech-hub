@@ -12,7 +12,7 @@ export const Welcome = () => {
       <Column width={40}>
         <Wrapper>
           <Heading>Welcome</Heading>
-          <Title color="27AFE8">Let's Make Better World With Technology</Title>
+          <Title color="#27AFE8">Let's Make Better World With Technology</Title>
           <Paragraph>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
             tempora quam, repellendus id eos impedit sequi eaque earum et, quas
@@ -21,7 +21,7 @@ export const Welcome = () => {
         </Wrapper>
       </Column>
       <Column width={60}>
-        <Image src="./welcome.jpg" alt="" />
+        <Image src="./feature.jpg" alt="" />
       </Column>
     </Section>
   );
