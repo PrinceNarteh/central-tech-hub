@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
+interface ColumnProps {
+  align?: "start" | "center" | "end";
+  width?: number;
+}
+
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  width: ${({ width }: { width?: number }) => (width ? `${width}%` : `50%`)};
-  align-items: center;
+  align-items: ${({ align }: ColumnProps) => (align ? align : "center")};
+  width: ${({ width }: ColumnProps) => (width ? `${width}%` : `50%`)};
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 15px;
