@@ -8,12 +8,11 @@ interface TitleProps {
   children?: React.ReactNode;
 }
 
-export const Title = ({ as, children }: TitleProps) => {
+export const Title = ({ as, fontSize, children }: TitleProps) => {
   const TitleStyle = styled(as)`
     margin-bottom: 20px;
     font-weight: 500;
-    font-size: ${({ fontSize }: { fontSize: number }) =>
-      fontSize ? `${fontSize}rem` : `clamp(20px, 3.5vw, 38px)`};
+    font-size: ${fontSize ? `${fontSize}rem` : `clamp(20px, 3.5vw, 38px)`};
     line-height: 1.1;
     color: ${({ color }: { color?: string }) =>
       color ? `${color}` : "#27AFE8"};

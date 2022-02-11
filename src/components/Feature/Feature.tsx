@@ -1,6 +1,5 @@
 import React from "react";
 import { Heading } from "../InfoSection/InfoSection.elements";
-import { Sample } from "../Sample";
 import { Column } from "../styles/Column";
 import { FeatureContainer, InfoBox } from "./Feature.styles";
 import { Title } from "../styles/Title";
