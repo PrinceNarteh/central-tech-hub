@@ -1,3 +1,4 @@
+import { ChooseUs } from "../../components/ChooseUs/ChooseUs";
 import { Feature } from "../../components/Feature/Feature";
 import ImageSlider from "../../components/ImageSlider/ImageSlider";
 import InfoSection from "../../components/InfoSection/InfoSection";
@@ -16,6 +17,7 @@ const Home = () => {
       <Feature />
       <Service />
       <OurCompany />
+      <ChooseUs />
       {/* <Offer /> */}
     </div>
   );

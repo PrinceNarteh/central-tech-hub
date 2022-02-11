@@ -57,7 +57,7 @@ const OurCompanyStyle = styled(Section)`
 
   p {
     font-size: 1.8rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
 `;
 
