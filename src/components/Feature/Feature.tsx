@@ -11,13 +11,43 @@ export const Feature = () => {
   return (
     <FeatureContainer>
       <Column>
-        <img src="./welcome.jpg" alt="" />
+        <Image src="./welcome.jpg" alt="" />
       </Column>
       <Column align="start">
         <Heading>Feature</Heading>
         <Title as="h3" color="#27AFE8">
           What We Do
         </Title>
+        <Card>
+          <Title as="h6" fontSize={1}>
+            Planning
+          </Title>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            praesentium reprehenderit alias excepturi reiciendis maiores
+            perspiciatis voluptate porro aperiam non.
+          </p>
+        </Card>
+        <Card>
+          <Title as="h6" fontSize={1}>
+            Planning
+          </Title>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            praesentium reprehenderit alias excepturi reiciendis maiores
+            perspiciatis voluptate porro aperiam non.
+          </p>
+        </Card>
+        <Card>
+          <Title as="h6" fontSize={1}>
+            Planning
+          </Title>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            praesentium reprehenderit alias excepturi reiciendis maiores
+            perspiciatis voluptate porro aperiam non.
+          </p>
+        </Card>
         <Card>
           <Title as="h6" fontSize={1}>
             Planning
@@ -35,4 +65,15 @@ export const Feature = () => {
 
 const Card = styled(InfoBox)`
   max-width: 80%;
+  margin-bottom: 2rem;
+`;
+
+const Image = styled.img`
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(0.7);
+
+  &:hover {
+    filter: grayscale(0);
+  }
 `;
