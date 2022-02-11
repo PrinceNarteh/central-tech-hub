@@ -69,12 +69,14 @@ export const Service = () => {
 };
 
 const ServiceBox = styled(InfoBox)`
-  /* width: 30rem; */
   flex: 1;
   min-width: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 0.3s;
+  background-image: none;
+  background-color: #091d42;
 
   p {
     text-align: center;
@@ -87,5 +89,9 @@ const ServiceBox = styled(InfoBox)`
     width: 10rem;
     height: 10rem;
     margin-bottom: 1rem;
+  }
+
+  &:hover {
+    border: 2px solid #27afe8;
   }
 `;
