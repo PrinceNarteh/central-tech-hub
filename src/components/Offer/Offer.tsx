@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import OfferCard from "./OfferCard";
 import { Row } from "../styles/Row";
-import Title from "../Title";
+import { Title } from "../styles/Title";
 import { OfferColumn, OfferContainer } from "./Offer.elements";
 import { BiChalkboard } from "react-icons/bi";
 import { FaDatabase, FaMobileAlt } from "react-icons/fa";
@@ -39,10 +39,8 @@ const Offer = () => {
     <OfferStyle>
       <img src="offer.png" alt="" />
       <div className="top">
-        <Title as="h4" underline>
-          WHAT WE DO
-        </Title>
-        <Title fontSize={4} as="h2" textAlign="center">
+        <Title as="h4">WHAT WE DO</Title>
+        <Title fontSize={4} as="h2">
           We Provide Exclusive Services <br />
           For Your Business
         </Title>

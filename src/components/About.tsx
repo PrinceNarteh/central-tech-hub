@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { theme } from "../theme";
-import { Container } from "./styles";
-import Title from "./Title";
+import { Title } from "./styles/Title";
 
 const About = () => {
   return (
@@ -15,7 +14,6 @@ const About = () => {
             as="h4"
             fontSize={1.5}
             color={`${theme.colors.secondaryColor}`}
-            underline
           >
             About Company
           </Title>

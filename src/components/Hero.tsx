@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Container } from "./styles";
-import Title from "./Title";
+import { Title } from "./styles/Title";
 
 const Hero = () => {
   return (
