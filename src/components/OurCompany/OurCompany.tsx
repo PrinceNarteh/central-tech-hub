@@ -74,7 +74,7 @@ const Card = styled(InfoBox)`
   justify-content: center;
 
   h6 {
-    font-weight: 900;
+    font-weight: 700;
     margin-bottom: 1rem;
   }
 
