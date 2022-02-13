@@ -12,54 +12,65 @@ export const Feature = () => {
         <Image src="./welcome.jpg" alt="" />
       </Column>
       <Column align="start">
-        <Heading>Feature</Heading>
-        <Title as="h3" color="#27AFE8">
-          What We Do
-        </Title>
-        <Card>
-          <Title as="h6" fontSize={1}>
-            Planning
+        <Inner>
+          <Heading>Feature</Heading>
+          <Title as="h3" color="#27AFE8">
+            What We Do
           </Title>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-            praesentium reprehenderit alias excepturi reiciendis maiores
-            perspiciatis voluptate porro aperiam non.
-          </p>
-        </Card>
-        <Card>
-          <Title as="h6" fontSize={1}>
-            Planning
-          </Title>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-            praesentium reprehenderit alias excepturi reiciendis maiores
-            perspiciatis voluptate porro aperiam non.
-          </p>
-        </Card>
-        <Card>
-          <Title as="h6" fontSize={1}>
-            Planning
-          </Title>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-            praesentium reprehenderit alias excepturi reiciendis maiores
-            perspiciatis voluptate porro aperiam non.
-          </p>
-        </Card>
-        <Card>
-          <Title as="h6" fontSize={1}>
-            Planning
-          </Title>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-            praesentium reprehenderit alias excepturi reiciendis maiores
-            perspiciatis voluptate porro aperiam non.
-          </p>
-        </Card>
+          <Card>
+            <Title as="h6" fontSize={2}>
+              Planning
+            </Title>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              praesentium reprehenderit alias excepturi reiciendis maiores
+              perspiciatis voluptate porro aperiam non.
+            </p>
+          </Card>
+          <Card>
+            <Title as="h6" fontSize={1}>
+              Planning
+            </Title>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              praesentium reprehenderit alias excepturi reiciendis maiores
+              perspiciatis voluptate porro aperiam non.
+            </p>
+          </Card>
+          <Card>
+            <Title as="h6" fontSize={1}>
+              Planning
+            </Title>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              praesentium reprehenderit alias excepturi reiciendis maiores
+              perspiciatis voluptate porro aperiam non.
+            </p>
+          </Card>
+          <Card>
+            <Title as="h6" fontSize={1}>
+              Planning
+            </Title>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              praesentium reprehenderit alias excepturi reiciendis maiores
+              perspiciatis voluptate porro aperiam non.
+            </p>
+          </Card>
+        </Inner>
       </Column>
     </FeatureContainer>
   );
 };
+
+const Inner = styled.div`
+  padding: 2rem;
+
+  & > h3,
+  & > h6 {
+    text-align: center;
+  }
+`;
 
 const Card = styled(InfoBox)`
   max-width: 80%;
