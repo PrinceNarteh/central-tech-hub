@@ -1,10 +1,9 @@
 import React from "react";
+import styled from "styled-components";
 import { Heading } from "../InfoSection/InfoSection.elements";
 import { Column } from "../styles/Column";
-import { FeatureContainer, InfoBox } from "./Feature.styles";
 import { Title } from "../styles/Title";
-import { Paragraph } from "../styles/Paragraph";
-import styled from "styled-components";
+import { FeatureContainer, InfoBox } from "./Feature.styles";
 
 export const Feature = () => {
   return (

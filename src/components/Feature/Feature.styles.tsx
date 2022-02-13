@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const FeatureContainer = styled.section`
   display: flex;
+  background-image: url("top-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   img {
     width: 100%;
