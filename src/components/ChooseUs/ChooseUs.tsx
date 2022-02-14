@@ -42,33 +42,31 @@ const advantages = [
 
 export const ChooseUs = () => {
   return (
-    <SectionWithBGImage>
-      <Section>
-        <Column width={40}>
-          <Heading>Why Choose Us</Heading>
-          <Title as="h3">
-            See the difference professional services can do for you
-          </Title>
-          <Paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          </Paragraph>
-        </Column>
-        <Column width={60}>
-          <Wrapper>
-            {advantages.map((advantage, idx) => (
-              <Card key={idx}>
-                <div className="icon">{advantage.icon}</div>
-                <Title as="h6" fontSize={2.5}>
-                  {advantage.title}
-                </Title>
-                <p>{advantage.description}</p>
-              </Card>
-            ))}
-          </Wrapper>
-        </Column>
-      </Section>
-    </SectionWithBGImage>
+    <Section overlay>
+      <Column width={40}>
+        <Heading>Why Choose Us</Heading>
+        <Title as="h3">
+          See the difference professional services can do for you
+        </Title>
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </Paragraph>
+      </Column>
+      <Column width={60}>
+        <Wrapper>
+          {advantages.map((advantage, idx) => (
+            <Card key={idx}>
+              <div className="icon">{advantage.icon}</div>
+              <Title as="h6" fontSize={2.5}>
+                {advantage.title}
+              </Title>
+              <p>{advantage.description}</p>
+            </Card>
+          ))}
+        </Wrapper>
+      </Column>
+    </Section>
   );
 };
 

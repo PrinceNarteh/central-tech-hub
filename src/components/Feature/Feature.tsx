@@ -2,12 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { Heading } from "../InfoSection/InfoSection.elements";
 import { Column } from "../styles/Column";
+import { Section } from "../styles/Section";
 import { Title } from "../styles/Title";
 import { FeatureContainer, InfoBox } from "./Feature.styles";
 
 export const Feature = () => {
   return (
-    <FeatureContainer>
+    <Section fluid overlay noPadding>
       <Column>
         <Image src="./welcome.jpg" alt="" />
       </Column>
@@ -59,7 +60,7 @@ export const Feature = () => {
           </Card>
         </Inner>
       </Column>
-    </FeatureContainer>
+    </Section>
   );
 };
 
@@ -79,6 +80,7 @@ const Card = styled(InfoBox)`
 
 const Image = styled.img`
   height: 100%;
+  width: 100%;
   object-fit: cover;
   filter: grayscale(0.7);
 
