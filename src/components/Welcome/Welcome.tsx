@@ -10,7 +10,7 @@ export const Welcome = () => {
   return (
     <Section>
       <Column width={40}>
-        <Wrapper>
+        <Wrapper gap={0.1}>
           <Heading>Welcome</Heading>
           <Title color="#27AFE8">Let's Make Better World With Technology</Title>
           <Paragraph>

@@ -51,7 +51,7 @@ const Slider = ({
     <SliderStyle>
       <SliderContainer>
         <Row imgStart={false}>
-          <Column>
+          <Column align="start">
             <TextWrapper>
               <Heading lightText={lightText}>{headline}</Heading>
               <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>

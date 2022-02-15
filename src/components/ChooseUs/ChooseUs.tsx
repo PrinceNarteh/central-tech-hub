@@ -1,4 +1,8 @@
 import React from "react";
+import { BiCheckShield } from "react-icons/bi";
+import { GiTrophyCup } from "react-icons/gi";
+import { RiCustomerService2Fill } from "react-icons/ri";
+import { WiStars } from "react-icons/wi";
 import styled from "styled-components";
 import { InfoBox } from "../Feature/Feature.styles";
 import { Heading } from "../InfoSection/InfoSection.elements";
@@ -7,11 +11,6 @@ import { Paragraph } from "../styles/Paragraph";
 import { Section } from "../styles/Section";
 import { Title } from "../styles/Title";
 import { Wrapper } from "../styles/Wrapper";
-import { BiCheckShield } from "react-icons/bi";
-import { WiStars } from "react-icons/wi";
-import { RiCustomerService2Fill } from "react-icons/ri";
-import { GiTrophyCup } from "react-icons/gi";
-import { SectionWithBGImage } from "../styles/SectionWithBGImage";
 
 const advantages = [
   {
@@ -43,7 +42,7 @@ const advantages = [
 export const ChooseUs = () => {
   return (
     <Section overlay>
-      <Column width={40}>
+      <Column width={40} align="start">
         <Heading>Why Choose Us</Heading>
         <Title as="h3">
           See the difference professional services can do for you
@@ -61,7 +60,7 @@ export const ChooseUs = () => {
               <Title as="h6" fontSize={2.5}>
                 {advantage.title}
               </Title>
-              <p>{advantage.description}</p>
+              <Paragraph>{advantage.description}</Paragraph>
             </Card>
           ))}
         </Wrapper>
@@ -69,10 +68,6 @@ export const ChooseUs = () => {
     </Section>
   );
 };
-
-const ChooseUsContainer = styled(Section)`
-  padding: 0;
-`;
 
 const Card = styled(InfoBox)`
   flex: 1;
