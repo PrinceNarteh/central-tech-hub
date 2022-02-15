@@ -6,6 +6,7 @@ import { Column } from "../styles/Column";
 import { Title } from "../styles/Title";
 import { Section } from "../styles/Section";
 import { Wrapper } from "../styles/Wrapper";
+import { Paragraph } from "../styles/Paragraph";
 
 const stats = [
   {
@@ -32,10 +33,10 @@ export const OurCompany = () => {
       <Column>
         <Heading>Fun Fact</Heading>
         <Title as="h3">Our Company by Number</Title>
-        <p>
+        <Paragraph marginBottom={5}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. In vitae
           incidunt consectetur deserunt quidem.
-        </p>
+        </Paragraph>
         <Wrapper>
           {stats.map((stat, idx) => (
             <Card key={idx}>
@@ -54,11 +55,6 @@ export const OurCompany = () => {
 
 const OurCompanyStyle = styled(Section)`
   padding-top: 0;
-
-  p {
-    font-size: 1.8rem;
-    margin-bottom: 5rem;
-  }
 `;
 
 const Card = styled(InfoBox)`

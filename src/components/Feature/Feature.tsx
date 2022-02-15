@@ -4,7 +4,7 @@ import { Heading } from "../InfoSection/InfoSection.elements";
 import { Column } from "../styles/Column";
 import { Section } from "../styles/Section";
 import { Title } from "../styles/Title";
-import { FeatureContainer, InfoBox } from "./Feature.styles";
+import { InfoBox } from "./Feature.styles";
 
 export const Feature = () => {
   return (

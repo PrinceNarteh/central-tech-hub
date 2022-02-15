@@ -26,6 +26,7 @@ export const Section = ({
       display: flex;
       padding-top: 10rem;
       padding-bottom: 5rem;
+      background-color: #091d42;
 
       ${noPadding &&
       css`
@@ -36,9 +37,11 @@ export const Section = ({
           rgba(9, 29, 66, 0.8),
           rgba(9, 29, 66, 0.8)
         ),
-        url("top-background.jpg");
+        url("bg_memphis_1.png");
+      background-position: center right;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
+      opacity: 0.5;
     `;
 
     if (fluid) {

@@ -53,7 +53,7 @@ export const ChooseUs = () => {
         </Paragraph>
       </Column>
       <Column width={60}>
-        <Wrapper>
+        <Cards>
           {advantages.map((advantage, idx) => (
             <Card key={idx}>
               <div className="icon">{advantage.icon}</div>
@@ -63,11 +63,17 @@ export const ChooseUs = () => {
               <Paragraph>{advantage.description}</Paragraph>
             </Card>
           ))}
-        </Wrapper>
+        </Cards>
       </Column>
     </Section>
   );
 };
+
+const Cards = styled(Wrapper)`
+  & > div:nth-child(even) {
+    margin-top: 4rem;
+  }
+`;
 
 const Card = styled(InfoBox)`
   flex: 1;
